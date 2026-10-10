@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#05061a">
+<title>El Cazador 3D · remake de fans</title>
+<link rel="icon" href="assets/img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"></div>
+<div id="loading"><div class="ld">🐆</div><div>Cargando el plató…</div></div>
+<div id="menu" class="screen hidden">
+  <img id="menuLogo" class="logo" alt="el CAZADOR">
+  <div class="tag">Remake de fans en 3D · no oficial</div>
+  <div class="mech"><span>Mecánica:</span><button data-mech="clasica">Clásica 2020-2024</button><button data-mech="nueva">Nueva 2024-2025</button></div>
+  <div class="btns">
+    <button class="red" data-mode="tv">📺 PROGRAMA TV</button>
+    <button data-mode="train">🎯 Entrenamiento</button>
+    <button data-mode="noche">🌙 La noche de los cazadores</button>
+    <button data-mode="historia">📜 Historia del programa</button>
+    <button data-mode="walk">🚶 Pasear por el plató</button>
+    <button class="custom" id="btnCustom">⚙ Personalizar</button>
+  </div>
+  <div class="specials">Especiales<div class="spBtns" id="spBtns"></div></div>
+  <div class="menuFoot">
+    <div class="career" id="career"></div>
+    <div class="qrow"><button id="btnQuality">Calidad: <b id="qName">Auto</b></button><span class="dl" id="dlLinks"><a href="ElCazador3D.apk" download>⬇ APK Android</a></span></div>
+    <div class="disc">Remake hecho por fans sin relación oficial con RTVE, Mediacrest ni ITV Studios. Presentador, cazadores y concursantes son personajes virtuales inventados. Creado por Iker Rodriguez Tejedor.</div>
+  </div>
+</div>
+<div id="mosca" class="hidden"><span class="rt">rtve</span><span class="ch" id="moscaCh">La 1</span><span class="live">DIRECTO</span></div>
+<div id="hud" class="hidden"><div id="hPhase"></div><div id="timer" class="hidden">60</div><div id="hMoney" class="hidden"></div></div>
+<canvas id="fgfx" class="hidden"></canvas>
+<div id="chess" class="hidden"></div>
+<div id="play" class="hidden"></div>
+<div id="sub" class="hidden"></div>
+<div id="chat"></div>
+<div id="overlay" class="hidden"></div>
+<div id="topBtns" class="hidden"><button id="tbHome" title="Menú">⌂</button><button id="tbCam" title="Cámara">🎥</button><button id="tbWalk" title="Pasear">🚶</button><button id="tbLights" title="Luces">💡</button><button id="tbMute" title="Sonido">🔊</button></div>
+<div id="skip" class="hidden">⏭</div>
+<div id="glights" class="hidden"></div>
+<div id="joy" class="hidden"><div id="knob"></div></div>
+<div id="fade"></div>
+<div id="wm">El Cazador 3D · remake de fans · no oficial</div>
+<div id="qinfo"></div>
+<script src="game.js"></script>
+</body>
+</html>
